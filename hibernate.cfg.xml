@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/Customer</property>
+<property name="hibernate.connection.username">root</property>
+<property name="hibernate.connection.password">Sakshi@8877#</property>
+<property name="hibernate.connection.pool_size">20</property>
+<property name="show_sql">true</property>
+<property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+<property name="hibernate.hbm2ddl.auto">update</property>
+
+<mapping class="ourproject.com.model.User"></mapping>
+
+<mapping class="ourproject.com.model.Receptionist"></mapping>
+
+<mapping class="ourproject.com.model.Room"></mapping>
+
+
+
+</session-factory>
+</hibernate-configuration>
